@@ -13,3 +13,8 @@ class FailureCase(unittest.TestCase):
 
     def test_bad(self):
         self.assertFalse(1)
+
+class ErrorCase(unittest.TestCase):
+
+    def test_ough(self):
+        raise ValueError('something wrong')
